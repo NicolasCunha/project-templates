@@ -1,4 +1,4 @@
-# Languages/Techonologies:
+# Languages/Technologies:
 
 - Java
 - [SLF4J API](https://mvnrepository.com/artifact/org.slf4j/slf4j-api)
