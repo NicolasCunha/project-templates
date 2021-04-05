@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+    id 'java'
+    id 'jacoco'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+mainClassName = 'com.SystemApplication'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+    implementation group: 'org.slf4j', name: 'slf4j-jdk14', version: '1.7.30'
+}
+
+javafx {
+    version = '13'
+    modules = [ 'javafx.controls' ]
+}
